@@ -15,14 +15,18 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.charliecruzan.tabs38"
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
+    },
+    "sdkVersion": "38.0.0",
+    "platforms": ["ios", "android", "web"],
+    "android": {
+      "package": "com.charliecruzan.tabs38"
     }
   }
 }
