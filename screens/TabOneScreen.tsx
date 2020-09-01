@@ -10,43 +10,28 @@ export default function TabOneScreen() {
       <View style={{ flexDirection: "row", flexWrap: "wrap" }}>
         <Image
           style={{ width: 50, height: 50 }}
-          source={require("../assets/images/a.png")}
+          source={require("../assets/images/one.jpeg")}
+        />
+
+        <Image
+          style={{ width: 50, height: 50 }}
+          source={require("../assets/images/two.jpeg")}
         />
         <Image
           style={{ width: 50, height: 50 }}
-          source={require("../assets/images/i.png")}
+          source={require("../assets/images/three.jpeg")}
         />
         <Image
           style={{ width: 50, height: 50 }}
-          source={require("../assets/images/1.jpeg")}
+          source={require("../assets/images/four.jpeg")}
         />
         <Image
           style={{ width: 50, height: 50 }}
-          source={require("../assets/images/2.png")}
+          source={require("../assets/images/five.jpeg")}
         />
         <Image
           style={{ width: 50, height: 50 }}
-          source={require("../assets/images/3.png")}
-        />
-        <Image
-          style={{ width: 50, height: 50 }}
-          source={require("../assets/images/4.png")}
-        />
-        <Image
-          style={{ width: 50, height: 50 }}
-          source={require("../assets/images/5.png")}
-        />
-        <Image
-          style={{ width: 50, height: 50 }}
-          source={require("../assets/images/e.png")}
-        />
-        <Image
-          style={{ width: 50, height: 50 }}
-          source={require("../assets/images/o.png")}
-        />
-        <Image
-          style={{ width: 50, height: 50 }}
-          source={require("../assets/images/p.png")}
+          source={require("../assets/images/six.jpeg")}
         />
       </View>
       <Text style={styles.title}>Tab One</Text>

@@ -7,31 +7,14 @@ import * as Font from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import { Asset } from "expo-asset";
 
-const IMAGES = [
-  require("./assets/images/2.mov"),
-  require("./assets/images/2.png"),
-  require("./assets/images/3.png"),
-  require("./assets/images/4.png"),
-  require("./assets/images/5.png"),
-  require("./assets/images/favicon.png"),
-  require("./assets/images/6.png"),
-  require("./assets/images/horizontalone.png"),
-  require("./assets/images/icon.png"),
-  require("./assets/images/1.jpeg"),
-  require("./assets/images/a.png"),
-  require("./assets/images/e.png"),
-  require("./assets/images/i.png"),
-  require("./assets/images/o.png"),
-  require("./assets/images/p.png"),
-  require("./assets/images/q.png"),
-  require("./assets/images/r.png"),
-  require("./assets/images/t.png"),
-  require("./assets/images/u.png"),
-  require("./assets/images/w.png"),
-  require("./assets/images/y.png"),
-  require("./assets/images/splash.png"),
-  require("./assets/images/verticalOne.png"),
-];
+import one from "./assets/images/one.jpeg";
+import two from "./assets/images/two.jpeg";
+import three from "./assets/images/three.jpeg";
+import four from "./assets/images/four.jpeg";
+import five from "./assets/images/five.jpeg";
+import six from "./assets/images/six.jpeg";
+
+const IMAGES = [one, two, three, four, five, six];
 export default class App extends React.Component {
   state = {
     isLoadingComplete: false,
@@ -49,27 +32,6 @@ export default class App extends React.Component {
     });
   };
 
-  /*loadAssets = async () => {
-    try {
-      let result = await Font.loadAsync({
-        ...Ionicons.font,
-        "space-mono": require("./assets/fonts/SpaceMono-Regular.ttf"),
-        "OpenSans-Regular": require("./assets/fonts/OpenSans-Regular.otf"),
-      });
-      console.log(result);
-
-      const cacheImages = IMAGES.map((image) => {
-        return Asset.fromModule(image).downloadAsync();
-      });
-
-      let result2 = await Promise.all([...cacheImages]);
-      console.log(result2);
-    } catch (e) {
-      console.warn(e);
-    } finally {
-      this.setState({ isLoadingComplete: true });
-    }
-  };*/
   async componentDidMount() {
     try {
       await SplashScreen.preventAutoHideAsync();
